@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Play Game</title>
+    <link rel="stylesheet" href="../Myspace.css/play_game.css" />
+    <script src="../Myspace.js/playgame.JS"></script>
+  
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="top-nav">
+    <div class="nav-brand">📘 MySpace</div>
+    <div class="menu-toggle">&#9776;</div>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="nav-button">Home</a></li>
+      <li><a href="../about.html" class="nav-button">About</a></li>
+      <li><a href="../videos.html" class="nav-button">Videos</a></li>
+      <li><a href="../contact.html" class="nav-button">Message Me</a></li>
+      <li><a href="#" class="nav-button active">Play Game</a></li>
+    </ul>
+  </nav>
+
+  <!-- Game Section -->
+  <main class="game-container">
+    <h1>🎉 Birthday Fun Time 🎉</h1>
+    <p>Choose an activity or let the wheel decide for you!</p>
+
+    <select id="activitySelect">
+      <option value="">-- Select an Activity --</option>
+      <option value="Watch a movie">🎬 Watch a movie</option>
+      <option value="Play a game">🕹️ Play a game</option>
+      <option value="Write a letter">💌 Write a letter</option>
+      <option value="Take a walk">🚶 Take a walk</option>
+      <option value="Listen to music">🎧 Listen to music</option>
+      <option value="Cook together">🍳 Cook together</option>
+      <option value="Play music">🎵 Play music</option>
+      <option value="Read a book">📖 Read a book</option>
+      <option value="Have a picnic">🧺 Have a picnic</option>
+    </select>
+
+    <div class="wheel-container">
+      <div class="wheel" id="wheel"></div>
+      <div class="pointer"></div>
+    </div>
+
+    <button onclick="spinWheel()"> 🎲 Spin the Wheel</button>
+
+    <div class="result" id="result"></div>
+  </main>
+
+
+</body>
+</html>
